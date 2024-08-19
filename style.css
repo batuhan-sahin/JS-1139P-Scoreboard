@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oxanium", sans-serif;
+}
+body {
+  background-image: url(/imgs/5567230.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.scoreboard {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+
+.team {
+  height: 500px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+  padding: 20px;
+  margin: 15px;
+  border: 5px solid black;
+  border-radius: 10px;
+  box-shadow: 20px 20px 20px 2px rgba(49, 49, 49, 0.88);
+}
+.team h1 {
+  font-size: 64px;
+  text-align: center;
+}
+.team p {
+  font-size: 72px;
+}
+
+.incrementScore,
+.decrementScore {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  margin: 0 23px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(6, 95, 150);
+  color: #fff;
+  cursor: pointer;
+}
+
+.manuelscore {
+  width: 150px;
+  height: 70px;
+  font-size: 24px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(6, 95, 150);
+  color: #fff;
+  cursor: pointer;
+}
+
+.teamname {
+  width: 150px;
+  height: 120px;
+  font-size: 24px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(6, 95, 150);
+  color: #fff;
+  cursor: pointer;
+}
+.teamname:hover,
+.manuelscore:hover,
+.incrementScore:hover,
+.decrementScore:hover {
+  opacity: 85%;
+}
+
+@media (max-width: 768px) {
+  .scoreboard {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px;
+  }
+}

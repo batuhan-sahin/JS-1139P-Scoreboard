@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>JS-1139P</title>
+  </head>
+  <body>
+    <div class="scoreboard">
+      <div class="team">
+        <h1 id="team1">Home</h1>
+        <p id="teamOneScore">0</p>
+        <div class="button-groups">
+          <button onclick="increaseScoreTeam1()" class="incrementScore">
+            +
+          </button>
+          <button onclick="decreaseScoreTeam1()" class="decrementScore">
+            -
+          </button>
+        </div>
+        <button onclick="teamScore1()" class="manuelscore">Enter Score</button>
+        <button onclick="teamName1()" class="teamname">Change Team Name</button>
+      </div>
+      <div class="team">
+        <h1 id="team2">Away</h1>
+        <p id="teamTwoScore">0</p>
+        <div class="button-groups">
+          <button onclick="increaseScoreTeam2()" class="incrementScore">
+            +
+          </button>
+          <button onclick="decreaseScoreTeam2()" class="decrementScore">
+            -
+          </button>
+        </div>
+        <button onclick="teamScore2()" class="manuelscore">Enter Score</button>
+        <button onclick="teamName2()" class="teamname">Change Team Name</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
