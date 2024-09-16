@@ -52,7 +52,7 @@ function teamName2() {
   if (teamNameB.length > 10) {
     alert("Please Enter Less Character than 10");
   } else {
-    document.getElementById("team1").innerHTML = teamNameB;
+    document.getElementById("team2").innerHTML = teamNameB;
   }
 }
 
